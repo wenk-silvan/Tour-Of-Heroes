@@ -11,9 +11,10 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
-import { HeroDetailComponent } from './heroes/hero-detail.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { HeroService } from './heroes/hero.service';
+import { HeroService } from './hero/hero.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   bootstrap: [
@@ -23,7 +24,8 @@ import { HeroService } from './heroes/hero.service';
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
