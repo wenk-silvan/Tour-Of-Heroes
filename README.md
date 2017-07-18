@@ -1,5 +1,10 @@
 # TourOfHeroes
 
+The *Tour of Heroes* is the official guide to learn Angular 2 step by step. 
+Lots of features like routing, search-terms and services are covered in this example project.
+
+[Angular Tutorial](https://angular.io/tutorial)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
 ## Development server
