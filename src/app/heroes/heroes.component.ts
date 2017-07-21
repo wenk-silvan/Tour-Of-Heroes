@@ -10,7 +10,7 @@ import { HeroService } from '../hero/hero.service';
   providers: [HeroService]
 })
 export class HeroesComponent implements OnInit {
-  heroes: Hero[];
+  public heroes: Hero[];
   selectedHero: Hero;
 
   constructor(private heroService: HeroService, private router: Router) { }
