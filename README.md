@@ -10,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## First steps
 
-Clone the project and run `npm install` insiden the project folder.
+Clone the project and run `npm install` inside the project folder.
 
 ## Development server
 
@@ -26,6 +26,9 @@ There is one sample api (`http://localhost:3030/api`), use this example if you w
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+If an error appears with a message, like "can't resolver '...app.module .ngfactory' in '...\src', 
+please update the modules to their newest version. Especially the @angular/cli". Run `npm install -g npm-check-updates` in the console or
+manually update the version numbers in `package.json`.
 
 ## Running unit tests
 
@@ -39,7 +42,8 @@ and run it within the IDE.
 Run `node .\node_modules\protractor\bin\protractor --disableChecks` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `npm start`. If you have WebStorm available you can create 
 a protractor config file as written in the [instruction](https://www.jetbrains.com/help/webstorm/run-debug-configuration-protractor.html)
-and run it within the IDE.
+and run it within the IDE. If the following error message appears: "Could not find update-config.json. Run 'webdriver-manager update' to download binaries."
+Just hit `node .\node_modules\protractor\bin\webdriver-manager update` to update the webdriver and the e2e-tests should work.
 
 ## Code scaffolding
 
