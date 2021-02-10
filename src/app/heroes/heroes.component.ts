@@ -13,7 +13,7 @@ export class HeroesComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getHeroes();
   }
 
@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
     this.heroService.addHero({ name } as Hero)
       .subscribe(h => {
         this.heroes.push(h);
-      })
+      });
   }
 
   delete(hero: Hero): void {
